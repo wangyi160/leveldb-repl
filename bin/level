@@ -14,6 +14,8 @@ var pj = require('prettyjson');
 var dbpath = args._[2];
 var actions = {};
 
+var WriteStream = require('level-ws');
+
 /**
  * Help
  */
@@ -49,6 +51,7 @@ if (!dbpath) {
  */
 
 var db = level(dbpath);
+var ws = WriteStream(db);
 
 /**
  * Start the repl
@@ -161,12 +164,12 @@ actions.del = function(args, fn) {
     });
 
   function next() {
-    var ws = db.createWriteStream({ type: 'del' })
+    var ws = WriteStream(db)
       .on('error', fn)
       .on('close', fn)
 
     for (var i = 0, key; key = keys[i++];) {
-      ws.write({ key: key });
+      ws.write({ type: 'del', key: key });
     }
 
     ws.end();
