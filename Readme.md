@@ -12,7 +12,7 @@
 ## Features
 
 - Glob keys when getting a value.
-- Support up to node 0.11.14 using [level-11](https://npmjs.org/package/level-11).
+- Support up to node 10.* using [level](https://npmjs.org/package/level).
 - Supports JSON formatting and utf-8 encoding.
 - Pretty colors.
 
