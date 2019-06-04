@@ -7,7 +7,7 @@
 
 ## Installation
 
-    npm install -g leveldb-repl
+    npm install -g new-leveldb-repl
 
 ## Features
 
@@ -48,7 +48,7 @@ $ level [dbpath]
 
 (The MIT License)
 
-Copyright (c) 2014 Matthew Mueller &lt;matt@lapwinglabs.com&gt;
+Copyright (c) 2019 wang yi &lt;wangyi160@hotmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

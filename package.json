@@ -1,12 +1,12 @@
 {
-  "name": "leveldb-repl",
-  "version": "0.1.2",
-  "description": "simple repl for leveldb. supports node 0.11.x.",
+  "name": "new-leveldb-repl",
+  "version": "0.1.0",
+  "description": "simple repl for leveldb. supports node 10.x.",
   "keywords": [],
-  "author": "Matthew Mueller <matt@lapwinglabs.com>",
+  "author": "Wang Yi <wangyi160@hotmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lapwinglabs/level-repl.git"
+    "url": "git://github.com/wangyi160/level-repl.git"
   },
   "dependencies": {
     "chalk": "^0.5.1",
